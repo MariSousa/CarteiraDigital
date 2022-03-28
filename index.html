@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--Icone barra-->
+    <link rel="shortcut icon" href="rede.png" type="image/x-icon">
+
+    <title>Conta de Banco</title>
+</head>
+<body>
+    
+    <div id="containerAbrirConta">
+        <h1>Abra sua conta na Carteira Digital</h1>
+        <div id="bloco">
+           
+            <div>
+                <label for="nomeDono">Digite seu nome:</label>
+                <input type="text" name="nomeDono" id="nomeDono" autocomplete="off">
+            </div>
+
+            <div>
+                <label for="tipoConta">Escolha um tipo de conta que deseja: </label>
+                <select name="tipoConta" id="tipoConta">
+                    <option value="">Escolha um tipo de conta</option>
+                    <option value="cc">CC - Conta Corrente</option>
+                    <option value="cp">CP - Conta Poupança</option>
+                </select>
+            </div>
+
+            <div>
+               <input type="button" value="Abrir conta" id="bttAbrirConta">
+            </div>
+        </div>
+
+    </div>
+
+    <script  src="js/contaBanco.js"></script>
+</body>
+</html>

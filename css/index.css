@@ -1,0 +1,58 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html{
+    margin: 0;
+    background-color: #FC2908;
+    overflow: hidden;
+}
+
+#containerAbrirConta {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bloco{
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px !important;
+}
+
+#containerAbrirConta div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#containerAbrirConta div input, #containerAbrirConta div select{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3% 2%;
+    background-color: white;
+}
+
+#containerAbrirConta div input[type='button']{
+    width: 150px;
+    padding: 5%;
+    background-color: #661E02;
+    color: white;
+}
+
+@media screen and (min-width:768px){
+    #bloco{
+        width: 50%;
+    }
+}

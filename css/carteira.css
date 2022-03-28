@@ -1,0 +1,144 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html{
+    margin: 0;
+    background-color: #FC2908;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, ul li, a{
+    margin: 0;
+    padding: 0;
+}
+
+a p{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+a i{
+    color: #152445;
+    font-size: 20px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+.col-4 {
+    -ms-flex: 0 0 303%;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+#headerCarteira{
+    background-color: #101C36;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 0% auto;
+    height: 200px;
+    color: white;
+    width: 100%;
+}
+
+#headerCarteira .sectionContaAgencia{
+    font-size: 12px;
+}
+
+#headerCarteira .sectionContaAgencia span{
+    font-weight: 600
+}
+
+#headerCarteira .sectionSaldo{
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
+
+#headerCarteira .sectionSaldo h4{
+    font-size: 40px;
+}
+
+.colunasServicos{
+    background-color: #101C36;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 0px rgba(12, 12, 12, 0.226);
+    display: grid;
+    place-items: center;
+    margin: 2% auto;
+}
+
+.colunasServicos button i{
+    color: white;
+    font-size: 20px;
+}
+
+.colunasServicos button p{
+    color: white;
+    font-weight: 600;
+}
+
+.servicosCarteira{
+    height: 200px;
+    margin: 5% auto;
+}
+
+#depositar, #sacar{
+    display: none;
+        flex-flow: column;
+        gap: 10px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    
+}
+
+.servicosCarteira input{
+    border: 2px solid #101C36;
+    border-radius: 5px;
+}
+
+.servicosCarteira input[type='number']{
+    background-color: #fde7e6;
+    width: 100%;
+}
+
+.servicosCarteira input[type='button']{
+    background-color: #101C36;
+    color: white;
+    font-weight: 600;
+}
+
+footer .navbar a i {
+    font-size: 14px !important;
+    color: #152445;
+}
+
+footer .navbar a p{
+    color: #101C36;
+}
+
+.navbar {
+    justify-content: space-evenly;
+    border-top: 3px solid #101C36;
+}
+
+footer .bg-light {
+    background-color: #101C36!important;
+}
+
+footer .navbar ul li{
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}

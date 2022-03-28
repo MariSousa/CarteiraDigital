@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!--Local-->
+        <link rel="stylesheet" href="css/carteira.css">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!--Icone barra-->
+        <link rel="shortcut icon" href="rede.png" type="image/x-icon">
+
+    <title>Carteira Digital</title>
+</head>
+<body>
+    
+
+    <div class="container" id="headerCarteira">
+
+        <div class="sectionContaAgencia">
+            <p>Instituição 498 - Carteira Digital</p>
+            <!--Conta e agencia javascript-->
+            <p>Bem-vindo: <span id="nomeDonoConta">Mariana</span></p>
+            <p>Ag: <span id="agenciaNumero"></span> - <span id="tipoConta">Cc: </span> <span id="contaNumero"></span></p>
+        </div>
+
+        <div class="sectionSaldo">
+            <!--Saldo javascript-->
+            <h4>R$ <span id="saldoAtual"></span></h4>
+        </div>
+
+    </div>
+
+    <div class="container" id="servicos">
+        <div class="row">
+            <div class="col-4 colunasServicos">
+                <button href="" id="linkServicoDepositar">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <p>Depositar</p>
+                </button>
+            </div>
+
+            <div class="col-4 colunasServicos">
+                <button href="" id="linkServicoSacar">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <p>Pagar</p>
+                </button>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="container servicosCarteira">
+
+        <div id="depositar">
+            <label for="depositarValor">Digite um valor que deseja depositar</label>
+            <input type="number" name="depositarValor" id="depositarValor">
+            <input type="button" value="Depositar valor" id="bttDepositarValor">
+            <input type="button" value="Sair" id="cancelarDeposito">
+        </div>
+
+        <div id="sacar">
+            <label for="sacarValor">Digite um valor que deseja pagar</label>
+            <input type="number" name="sacarValor" id="sacarValor">
+            <input type="button" value="Sacar valor" id="bttSacarValor">            
+            <input type="button" value="Sair" id="cancelarSacar">
+        </div>
+
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <p>Home</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-wallet"></i>
+                    <p>Carteira</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>Pagar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Perfil</p>
+                  </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+
+
+
+
+    <!--Scripts-->
+        <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!--Fontawesome-->
+        <script src="https://kit.fontawesome.com/9addec38ab.js" crossorigin="anonymous"></script>
+
+        <!--Local-->
+        <script type="module" src="js/interface.js"></script>
+        <script type="module" src="js/header.js"></script>
+</body>
+</html>
